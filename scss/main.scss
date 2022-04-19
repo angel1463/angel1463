@@ -479,25 +479,7 @@ footer {
     
 }
 
-.email{
-    font-size: 25px;
-    padding-top:1px;
-    padding-bottom: 10px;
-    height: 5px;
-    float: right;
-    margin: -100px;
-    margin-right: 100px ;
-    
- 
-}
 
-.email a {
-    text-decoration: none;
-    color: #348888;
-    height: 5px;
-    
-    
-}
 
 .iconos {
     padding-top: 5px;
@@ -509,20 +491,21 @@ footer {
     font-size: 2.5em;
     grid-gap: 8em;
     
-
+     i {
+        color: #348888;
+       
+        &:hover {
+            color: white;
+            
+        }
+    }
 }
 
 
 
-.iconos i {
-    color: #348888;
-   
-}
 
-.iconos i:hover {
-    color: white;
-    
-}
+
+
 
 
 /*Contacto*/
@@ -554,11 +537,13 @@ footer {
     font-size: 30px;
     font-weight: 300px;
     margin-top: 20px;
+
+    .contenedorcontacto{
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
 }
-.contenedorcontacto{
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
+
     
 
 .form {
@@ -580,26 +565,30 @@ footer {
     background-color: #CACED1;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    i{
+        font-size: 70px;
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+
+        .como{
+            color: black;
+            font-size: 20px;
+        }
+    
+    }
    
 }
 
-.como{
-    color: black;
-    font-size: 20px;
-}
 
-.viajar i{
-    font-size: 70px;
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    animation: myAnim 2s ease 0s 1 normal forwards;
 
-}
+
 @keyframes myAnim {
 	0%,
 	100% {
@@ -766,7 +755,7 @@ footer {
     display: flex;
   
     font-size: 2.5em;
-    grid-gap: 7em;
+    grid-gap: 3em;
     
 
 }
